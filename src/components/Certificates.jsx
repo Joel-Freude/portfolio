@@ -13,7 +13,8 @@ const Certificates = ({ data }) => {
     } else if (issuer.includes('Cisco')) {
       return (
        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 10v4 M7 8v8 M10 6v12 M13 8v8 M16 10v4 " />
+        <circle cx="12" cy="12" r="10" strokeWidth="2" />
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth="2" d="M8 12h8 M12 8v8" />
       </svg>
       );
     } else if (issuer.includes('Microsoft')) {
