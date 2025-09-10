@@ -13,7 +13,6 @@ function App() {
   const [isTransitioning, setIsTransitioning] = useState(false);
 
   useEffect(() => {
-    // Load portfolio data
     const loadPortfolioData = async () => {
       try {
         const response = await fetch('/data/portfolio.json');
@@ -103,7 +102,6 @@ function App() {
     loadPortfolioData();
   }, []);
 
-  // Handle section transitions with fade effect
   const handleSectionChange = (newSection) => {
     if (newSection === activeSection || isTransitioning) return;
     

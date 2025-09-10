@@ -12,9 +12,9 @@ const Certificates = ({ data }) => {
       );
     } else if (issuer.includes('Cisco')) {
       return (
-        <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
-          <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M9 3v2m6-2v2M9 19v2m6-2v2M5 9H3m2 6H3m18-6h-2m2 6h-2M7 19h10a2 2 0 002-2V7a2 2 0 00-2-2H7a2 2 0 00-2 2v10a2 2 0 002 2zM9 9h6v6H9V9z" />
-        </svg>
+       <svg className="w-8 h-8" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+        <path strokeLinecap="round" strokeLinejoin="round" strokeWidth={2} d="M4 10v4 M7 8v8 M10 6v12 M13 8v8 M16 10v4 " />
+      </svg>
       );
     } else if (issuer.includes('Microsoft')) {
       return (
@@ -60,7 +60,6 @@ const Certificates = ({ data }) => {
             </p>
           </div>
 
-          {/* Certificates Grid */}
           <div className="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
             {data.certificates.map((cert, index) => (
               <div
@@ -69,7 +68,6 @@ const Certificates = ({ data }) => {
                 style={{ animationDelay: `${index * 200}ms` }}
                 onClick={() => setSelectedCert(selectedCert === cert.id ? null : cert.id)}
               >
-                {/* Certificate Header */}
                 <div className={`bg-gradient-to-r ${getCertGradient(index)} p-6 text-white relative overflow-hidden cursor-pointer`}>
                   <div className="absolute inset-0 bg-black/10 group-hover:bg-black/20 transition-colors duration-300"></div>
                   <div className="relative z-10">
@@ -86,13 +84,11 @@ const Certificates = ({ data }) => {
                   </div>
                 </div>
 
-                {/* Certificate Content */}
                 <div className="p-6">
                   <p className="text-gray-600 leading-relaxed mb-4">
                     {cert.description}
                   </p>
 
-                  {/* Certificate Badge */}
                   <div className="flex items-center justify-between">
                     <div className="flex items-center space-x-2">
                       <div className={`w-3 h-3 rounded-full bg-gradient-to-r ${getCertGradient(index)}`}></div>
@@ -103,7 +99,6 @@ const Certificates = ({ data }) => {
                     </button>
                   </div>
 
-                  {/* Expandable Details */}
                   {selectedCert === cert.id && (
                     <div className="mt-4 pt-4 border-t border-gray-100 animate-in slide-in-from-top-2 duration-300">
                       <div className="space-y-3">
