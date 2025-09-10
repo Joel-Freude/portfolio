@@ -1,0 +1,82 @@
+{
+  "personal": {
+    "name": "Fofie Jounewe Joel Freude",
+    "titles": ["Web Designer", "IT Maintainer", "Software Developer"],
+    "birthDate": "October 27, 1999",
+    "email": "joelfreude10@gmail.com",
+    "phone": "+237 6 93 54 15 96",
+    "location": "Yaounde, Cameroun",
+    "bio": "Passionate web designer and software developer with 5 years of experience in web design and 3 years in front-end development. Specialized in creating innovative digital solutions and maintaining IT infrastructure."
+  },
+  "experience": {
+    "webDesign": {
+      "years": 5,
+      "description": "Creating beautiful and functional web interfaces"
+    },
+    "frontendDevelopment": {
+      "years": 3,
+      "description": "Building responsive and interactive web applications"
+    },
+    "itMaintenance": {
+      "description": "Advanced electronic maintenance and system administration"
+    }
+  },
+  "skills": {
+    "frontend": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Svelte"],
+    "backend": ["Django", "AdonisJS", "Express.js", "MongoDB"],
+    "mobile": ["Flutter"],
+    "other": ["Operating System Maintenance", "Electronic Maintenance", "IT Support"]
+  },
+  "projects": [
+    {
+      "id": 1,
+      "title": "Food Delivery App",
+      "description": "A comprehensive food delivery web interface built with React and Next.js, featuring real-time ordering, payment integration, and responsive design.",
+      "technologies": ["React", "Next.js", "JSON"],
+      "year": "2021",
+      "type": "Web Application",
+      "status": "Completed"
+    },
+    {
+      "id": 2,
+      "title": "Online Library Website",
+      "description": "A modern library management system with book cataloging, user authentication, and search functionality built with Svelte and Express.js.",
+      "technologies": ["HTML", "CSS", "JS", "Express.js", "Node.js"],
+      "year": "2023",
+      "type": "Web Application",
+      "status": "Completed"
+    },
+    {
+      "id": 3,
+      "title": "E-commerce App with Admin Dashboard",
+      "description": "An ongoing e-commerce mobile application with advanced tracking features in the admin dashboard, built using Flutter for cross-platform compatibility.",
+      "technologies": ["Flutter", "Dart", "Figma"],
+      "year": "2024",
+      "type": "Mobile Application",
+      "status": "In Progress"
+    }
+  ],
+  "certificates": [
+    {
+      "id": 1,
+      "title": "Front-end Development Certificate",
+      "issuer": "LinkedIn Learning",
+      "description": "Comprehensive certification covering modern front-end development practices, React, and responsive design principles.",
+      "year": "2019"
+    },
+    {
+      "id": 2,
+      "title": "CCNA Certificate",
+      "issuer": "Cisco",
+      "description": "Cisco Certified Network Associate certification demonstrating expertise in network fundamentals, security, and automation.",
+      "year": "2022"
+    },
+    {
+      "id": 3,
+      "title": "Data Science Fundamentals",
+      "issuer": "Microsoft",
+      "description": "Microsoft certification covering data science principles, analytics, and machine learning fundamentals.",
+      "year": "2025"
+    }
+  ]
+}
