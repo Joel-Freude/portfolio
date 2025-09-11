@@ -25,7 +25,8 @@
     "frontend": ["HTML", "CSS", "JavaScript", "React", "Next.js", "Svelte"],
     "backend": ["Django", "AdonisJS", "Express.js", "MongoDB"],
     "mobile": ["Flutter"],
-    "other": ["Operating System Maintenance", "Electronic Maintenance", "IT Support"]
+    "IT": ["Operating System Maintenance", "Electronic Maintenance", "IT Support"],
+    "Design": ["Figma", "Adobe XD", "Photoshop", "Canva", "Illustrator"]
   },
   "projects": [
     {
@@ -48,7 +49,7 @@
     },
     {
       "id": 3,
-      "title": "E-commerce App with Admin Dashboard",
+      "title": "E-commerce Platform",
       "description": "An ongoing e-commerce mobile application with advanced tracking features in the admin dashboard, built using Flutter for cross-platform compatibility.",
       "technologies": ["Flutter", "Dart", "Figma"],
       "year": "2024",
