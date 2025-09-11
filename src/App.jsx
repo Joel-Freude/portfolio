@@ -5,6 +5,7 @@ import About from './components/About';
 import Projects from './components/Projects';
 import Certificates from './components/Certificates';
 import Contact from './components/Contact';
+import data from '../public/data/portfolio.json';
 
 function App() {
   const [portfolioData, setPortfolioData] = useState(null);
@@ -21,76 +22,65 @@ function App() {
       } catch (error) {
         console.error('Error loading portfolio data:', error);
         setPortfolioData({
-          personal: {
-            name: "Fofie Jounewe Joel Freude",
-            titles: ["Web Designer", "IT Maintainer", "Software Developer"],
-            birthDate: "October 27, 1999",
-            email: "joelfreude10@gmail.com",
-            phone: "+237 6 93 54 15 96",
-            location: "Yaounde, Cameroun",
-            bio: "Passionate web designer and software developer with 5 years of experience in web design and 3 years in front-end development."
-          },
-          experience: {
-            webDesign: { years: 5, description: "Creating beautiful and functional web interfaces" },
-            frontendDevelopment: { years: 3, description: "Building responsive and interactive web applications" },
-            itMaintenance: { description: "Advanced electronic maintenance and system administration" }
-          },
+          personal: data.personal,
+          experience: data.experience,
           skills: {
-            frontend: ["HTML", "CSS", "JavaScript", "React", "Next.js"],
-            backend: ["Django", "AdonisJS", "Express.js"],
-            mobile: ["Flutter"],
-            other: ["Svelte", "Electronic Maintenance"]
+            frontend: data.skills.frontend,
+            backend: data.skills.backend,
+            mobile: data.skills.mobile,
+            IT: data.skills.IT,
+            Design: data.skills.Design,
           },
           projects: [
             {
-              id: 1,
-              title: "Food Delivery App",
-              description: "A comprehensive food delivery web interface built with React and Next.js.",
-              technologies: ["React", "Next.js", "JSON"],
-              year: "2021",
-              type: "Web Application",
+              id: data.projects[0].id,
+              title: data.projects[0].title,
+              description: data.projects[0].description,
+              technologies: data.projects[0].technologies,
+              year: data.projects[0].year,
+              type: data.projects[0].type,
               status: "Completed"
             },
             {
               id: 2,
-              title: "Online Library Website",
-              description: "A modern library management system with Svelte and Express.js.",
-              technologies: ["Svelte", "Express.js", "Node.js"],
-              year: "2023",
-              type: "Web Application",
+              title: data.projects[1].title,
+              description: data.projects[1].description,
+              technologies: data.projects[1].technologies,
+              year: data.projects[1].year,
+              type: data.projects[1].type,
               status: "Completed"
             },
             {
               id: 3,
-              title: "E-commerce App with Admin Dashboard",
-              description: "An ongoing e-commerce mobile application built using Flutter.",
-              technologies: ["Flutter", "Dart", "Admin Dashboard"],
-              year: "2024",
-              type: "Mobile Application",
+              title: data.projects[2].title,
+              description: data.projects[2].description,
+              technologies: data.projects[2].technologies,
+              year: data.projects[2].year,
+              type: data.projects[2].type,
               status: "In Progress"
             }
           ],
           certificates: [
             {
               id: 1,
-              title: "Front-end Development Certificate",
-              issuer: "LinkedIn Learning",
-              description: "Comprehensive certification covering modern front-end development practices.",
-              year: "2023"
+              title: data.certificates[0].title,
+              issuer: data.certificates[0].issuer,
+              description: data.certificates[0].description,
+              year: data.certificates[0].year
             },
             {
               id: 2,
-              title: "CCNA Certificate",
-              issuer: "Cisco",
-              description: "Cisco Certified Network Associate certification.",
-              year: "2022"
+              title: data.certificates[1].title,
+              issuer: data.certificates[1].issuer,
+              description: data.certificates[1].description,
+              year: data.certificates[1].year
             },
             {
               id: 3,
-              title: "Data Science Fundamentals",
-              issuer: "Microsoft",
-              description: "Microsoft certification covering data science principles.",
-              year: "2023"
+              title: data.certificates[2].title,
+              issuer: data.certificates[2].issuer,
+              description: data.certificates[2].description,
+              year: data.certificates[2].year
             }
           ]
         });
